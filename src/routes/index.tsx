@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
 
 const CHECKOUT_URL = "PASTE_HOTMART_CHECKOUT_LINK_HERE";
@@ -6,26 +5,6 @@ const VIDEO_EMBED_URL = "";
 const MOCKUP_IMAGE_SECTION_4 = "";
 const MOCKUP_IMAGE_SECTION_7 = "";
 const TEACHER_PHOTO = "";
-
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Understand Real Brazilian Portuguese at the Airport" },
-      {
-        name: "description",
-        content: "Practice recognizing the Brazilian Portuguese you'll hear in real airport conversations.",
-      },
-      { property: "og:title", content: "Understand Real Brazilian Portuguese at the Airport" },
-      {
-        property: "og:description",
-        content: "Practice recognizing the Brazilian Portuguese you'll hear in real airport conversations.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
-  component: Index,
-});
 
 function PlayIcon() {
   return (
@@ -265,7 +244,7 @@ function Faq() {
   );
 }
 
-function Index() {
+export function Index() {
   return (
     <>
       <section className="section-dark">
