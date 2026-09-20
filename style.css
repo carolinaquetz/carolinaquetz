@@ -33,6 +33,7 @@ p { margin: 0 0 18px; }
 
 .reading, .faq { max-width: 800px; }
 .center { text-align: center; }
+.center.reading { margin-inline: auto; }
 
 .dark, .light { padding: 90px 0; }
 
